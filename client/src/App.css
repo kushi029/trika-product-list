@@ -1,0 +1,146 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the font for the app */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Main container */
+div {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Search input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr.selected {
+  background-color: gray; /* For selected rows */
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+/* Button styles */
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+/* Pagination styles */
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  list-style-type: none; /* Remove default list styles */
+}
+
+/* Pagination buttons */
+.pagination li {
+  margin: 0 5px; /* Space between buttons */
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block; /* Make elements behave like inline-block for better spacing */
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px; /* Padding for the buttons */
+  border-radius: 4px;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.pagination a:hover {
+  background-color: #0056b3; 
+}
+
+/* Active page styling */
+.pagination .active a {
+  background-color: #0056b3; /* Active page background */
+  font-weight: bold; /* Make active page bold */
+}
+
+/* Disabled buttons */
+.pagination .disabled a {
+  background-color: #ccc; /* Background color for disabled */
+  color: #666; /* Text color for disabled */
+  cursor: not-allowed; /* Change cursor for disabled */
+}
+
+/* Break label styling */
+.break-me {
+  padding: 8px 12px; /* Padding for break label */
+  background-color: transparent; /* Transparent background */
+  color: #333; /* Text color for break label */
+  cursor: default; /* Change cursor for break label */
+}
+
+
+/* Message display for selected rows */
+p {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
